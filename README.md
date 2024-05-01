@@ -1,64 +1,94 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+Claro! Abaixo está um exemplo simplificado de um `README.md` em formato Markdown para o seu projeto Laravel com integração da API do Rick and Morty:
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+```markdown
+# Projeto Laravel com API do Rick and Morty
 
-## About Laravel
+Este é um projeto Laravel que consome a API do Rick and Morty para exibir informações sobre personagens da série e permite salvar personagens localmente.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Funcionalidades
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Exibição de uma lista de personagens vindos da API do Rick and Morty.
+- Detalhes de cada personagem com opção de salvar localmente.
+- Visualização dos personagens salvos.
+- Páginas adicionais: Sobre, Login/Cadastro.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Requisitos
 
-## Learning Laravel
+- PHP >= 7.4
+- Composer
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Setup do Projeto
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. **Clonar o Repositório:**
 
-## Laravel Sponsors
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-projeto.git
+   cd nome-do-projeto
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+2. **Instalar Dependências:**
 
-### Premium Partners
+   ```bash
+   composer install
+   ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+3. **Configurar o Arquivo de Ambiente:**
 
-## Contributing
+   - Faça uma cópia de `.env.example` e renomeie para `.env`:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+     ```bash
+     cp .env.example .env
+     ```
 
-## Code of Conduct
+   - Configure o arquivo `.env` com as informações do banco de dados.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+4. **Gerar a Chave de Aplicação:**
 
-## Security Vulnerabilities
+   ```bash
+   php artisan key:generate
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+5. **Executar as Migrações:**
 
-## License
+   ```bash
+   php artisan migrate
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+6. **Iniciar o Servidor de Desenvolvimento:**
+
+   ```bash
+   php artisan serve
+   ```
+
+   Acesse a aplicação em http://localhost:8000 no navegador.
+
+## Uso
+
+- Na página inicial, você verá uma lista de personagens da série.
+- Clique em um personagem para ver mais detalhes.
+- Na página de detalhes, você pode salvar o personagem localmente.
+- Acesse a página "Personagens Salvos" para ver os personagens que você salvou.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um PR com melhorias ou correções.
+
+## Autor
+
+chrisMartins95 - [GitHub]([https://github.com/seu-usuario](https://github.com/chrisMartins95))
+
+## Licença
+
+Este projeto é licenciado sob a [Licença MIT](LICENSE).
+```
+
+Neste exemplo simplificado de `README.md`:
+
+- A seção de Funcionalidades lista as principais funcionalidades do projeto.
+- A seção de Requisitos indica os pré-requisitos para executar o projeto.
+- A seção de Setup do Projeto fornece instruções simples para configurar e executar o projeto localmente.
+- A seção de Uso descreve como interagir com a aplicação.
+- A seção de Contribuição incentiva a colaboração no projeto.
+- A seção de Autor permite incluir informações sobre o desenvolvedor.
+- A seção de Licença informa sobre os termos de licenciamento do projeto.
+-----------------------------------------------------------------------------------------------------------------
