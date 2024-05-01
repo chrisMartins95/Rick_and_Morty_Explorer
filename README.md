@@ -1,6 +1,3 @@
-Claro! Abaixo está um exemplo simplificado de um `README.md` em formato Markdown para o seu projeto Laravel com integração da API do Rick and Morty:
-
-```markdown
 # Projeto Laravel com API do Rick and Morty
 
 Este é um projeto Laravel que consome a API do Rick and Morty para exibir informações sobre personagens da série e permite salvar personagens localmente.
